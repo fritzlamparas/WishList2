@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>WishList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/dda0a0614a.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <header id="header">
+        <div class="uppernav">
+            <span class="logosearch">
+                <a href="index.html" class ="logo monday altlogo ltxt">W</a>
+                <a href="index.html" class ="logo monday ltxt">WishList</a>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Search here...">
+                    <button class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </span>
+            <div class="topnav">
+                <a href="account.html" target="_blank">
+                    <i class="fa-solid fa-user fa-2x"></i></a>    
+                <a href="favorites.html" target="_blank">
+                        <i class="fa-solid fa-heart fa-2x"></i></a>  
+                <a href="cart.html" target="_blank"> 
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+            </div>
+            <div class="burger" onclick="toggleMenu()" id="menuIcon">
+                ☰
+            </div>
+        </div>
+        <div class="bottomnav">
+            <nav class="txt">
+                <a class="currnav">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                
+            </nav>
+            <nav class="botline txt">
+                <a href=""><i class="fa-solid fa-truck-fast fa-1"></i><span>Free Shipping on orders over ₱500</span></a>
+            </nav>
+        </div>
+        <div class="dropdown-menu palette" id="dropdownMenu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li><a href="favorites.html">Favorites</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="upperrow row ws">
+        <div class="half introtxt txt">
+            <strong class="ltxt">Discover Excellence at <span>WishList</span> - Your ultimate shopping</strong>
+            <br>
+            <p>Welcome to WishList, where excellence meets every shopping desire! Check items with affordable items here!</p>
+            <button class="cta">
+            <span class="hover-underline-animation txt"> Shop now </span>
+            <svg
+                id="arrow-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="10"
+                viewBox="0 0 46 16"
+            >
+                <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+                ></path>
+            </svg>
+            </button>
+        </div>
+        <div class="half">
+            <img src="images/home1.png" alt="WishList" title="WishList">
+        </div>
+    </div>
+    <div class="row pillars">
+        <a href="" class="pillar ws"><i class="fa-solid fa-box fa-2x"></i><span><strong>Free Shipping</strong><br>Free Shipping on orders over ₱500</span></a>
+        <a href="" class="pillar ws"><i class="fa-solid fa-credit-card fa-2x"></i><span><strong>Flexible Payment</strong><br>Multiple secure payment options</span></a>
+        <a href="" class="pillar ws"><i class="fa-solid fa-boxes-packing fa-2x"></i><span><strong>Return and Refund</strong><br>Accepting if within the policy</span></a>
+    </div>
+    <div class="row">
+        <div class="half tower1">
+            <div class="ws">
+                <a class="txt" href="">2500 items</a>
+                <p class="ltxt"><strong>For Women</strong></p>
+                <a class="txt" href="">Clothes</a>
+                <a class="txt" href="">Bottoms</a>
+                <a class="txt" href="">Footwear</a>
+                <a class="txt" href="">Bags</a>
+                <a class="txt" href="">Accessories</a>
+            </div>
+        </div>
+        <div class="half tower2">
+            <div class="ws buff">
+                <a class="txt" href="#">2500 items</a>
+                <p class="ltxt"><strong>For Men</strong></p>
+                <a class="txt" href="#">Clothes</a>
+                <a class="txt" href="#">Bottoms</a>
+                <a class="txt" href="#">Footwear</a>
+                <a class="txt" href="#">Bags</a>
+                <a class="txt" href="">Accessories</a>
+            </div>
+            <div class="ws">
+                <a class="txt" href="">2500 items</a>
+                <p class="ltxt"><strong>Others</strong></p>
+                <a class="txt" href="">Cosmetics</a>
+                <a class="txt" href="">Care Products</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="half txt">
+            <p><strong>© WishList 2024</strong></p>
+            <p><strong>All rights reserved.</strong></p>
+            <p><strong>Iloilo Brgy, 5000 Iloilo City, Philippines 5000 Iloilo City, Philippines</strong></p>
+        </div>
+        <div class="half txt">
+            <p><strong>Hosted with: <a href="https://pages.github.com/" target="_blank"><i class="fa-brands fa-github fa-1x"></i>Github Pages</a></strong></p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
