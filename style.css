@@ -239,7 +239,7 @@ nav span{
     color: #3B3A30;
 }
 
-.ws a {
+.ws > a {
     color: #3B3A30;
     margin: 10px 0;
 }
@@ -415,7 +415,7 @@ footer i{
    padding: 20px 10px;
 }
 
-.coninf a{
+.coninf > a{
     margin: 10px;
     display: flex;
     width: 350px;
@@ -433,12 +433,76 @@ footer i{
     transition: all 0.3s ease;
 }
 
-.coninf a:hover{
-    transform: translateY(-5px); /* Elevates the element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+.coninf > a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #3B3A30;
     text-decoration: none;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
+.card {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: #FAF3E0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3B3A30;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    border: 2px solid #3B3A30;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 10px;
+    cursor: pointer;
+    background-color: #FAF3E0;
+    color: #3B3A30;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #3B3A30;
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #FAF3E0;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #3B3A30;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #3B3A30;
+
+  }
+    
 @media screen and (max-width: 425px){
 
     .logo{
@@ -477,5 +541,10 @@ footer i{
     .tower1 .ws{
         background-image: none;
     }
-    
+    .coninf > a, .card{
+        width: 250px;
+    }
+    footer a{
+        display: inline-block;
+    }
 }
